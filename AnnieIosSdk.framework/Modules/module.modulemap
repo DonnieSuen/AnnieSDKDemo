@@ -1,0 +1,6 @@
+framework module AnnieIosSdk {
+  umbrella header "AnnieIosSdk.h"
+
+  export *
+  module * { export * }
+}
