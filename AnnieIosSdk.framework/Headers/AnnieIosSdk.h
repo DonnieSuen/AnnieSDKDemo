@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "MBProgressHUD.h"
 #import "AnnieStatuscode.h"
 #import "DDLog.h"
 #import "DDTTYLogger.h"
@@ -61,7 +60,6 @@ typedef enum {
 @interface AnnieIosSdk : NSObject
 
 @property(nonatomic,retain)id<AnnieCallback> delegate;//设置callback委托
-@property(nonatomic,strong)MBProgressHUD *HUD;
 
 
 /**

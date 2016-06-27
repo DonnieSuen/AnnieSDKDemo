@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		79C644AD1D17EDF000E67050 /* AnnieIosSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BCC74811CB790120043E6DF /* AnnieIosSdk.framework */; };
-		79C644AE1D17EDF000E67050 /* AnnieIosSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8BCC74811CB790120043E6DF /* AnnieIosSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		79C644B11D17F2F600E67050 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C644B01D17F2F600E67050 /* libz.tbd */; };
-		79C644B31D17F30000E67050 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C644B21D17F30000E67050 /* libsqlite3.tbd */; };
-		79C644BA1D17F65500E67050 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C644B81D17F65500E67050 /* GoogleMobileAds.framework */; };
+		7926880F1D1BC9740099C57A /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7926880E1D1BC9740099C57A /* GoogleMobileAds.framework */; };
+		792688111D1BCCCD0099C57A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 792688101D1BCCCD0099C57A /* libz.tbd */; };
+		792688131D1BCCD60099C57A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 792688121D1BCCD60099C57A /* libsqlite3.tbd */; };
+		792688151D1BD1E60099C57A /* AnnieIosSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792688141D1BD1E60099C57A /* AnnieIosSdk.framework */; };
 		79C644BB1D17F65500E67050 /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C644B91D17F65500E67050 /* UMMobClick.framework */; };
 		8BCC72BC1CB38F370043C95F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC72BB1CB38F370043C95F /* main.m */; };
 		8BCC72BF1CB38F370043C95F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC72BE1CB38F370043C95F /* AppDelegate.m */; };
@@ -37,24 +36,11 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		79C644AF1D17EDF000E67050 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				79C644AE1D17EDF000E67050 /* AnnieIosSdk.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		79C644B01D17F2F600E67050 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		79C644B21D17F30000E67050 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		79C644B81D17F65500E67050 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		7926880E1D1BC9740099C57A /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		792688101D1BCCCD0099C57A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		792688121D1BCCD60099C57A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		792688141D1BD1E60099C57A /* AnnieIosSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnnieIosSdk.framework; sourceTree = "<group>"; };
 		79C644B91D17F65500E67050 /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
 		8BCC72B71CB38F370043C95F /* AnnieIOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnnieIOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCC72BB1CB38F370043C95F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -75,7 +61,6 @@
 		8BCC72EC1CB39A6B0043C95F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BCC72ED1CB39A6B0043C95F /* AnnieIOSDemo.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnieIOSDemo.pch; sourceTree = "<group>"; };
 		8BCC72F21CB3A17E0043C95F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8BCC74811CB790120043E6DF /* AnnieIosSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnnieIosSdk.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +68,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				792688131D1BCCD60099C57A /* libsqlite3.tbd in Frameworks */,
+				792688111D1BCCCD0099C57A /* libz.tbd in Frameworks */,
+				792688151D1BD1E60099C57A /* AnnieIosSdk.framework in Frameworks */,
 				79C644BB1D17F65500E67050 /* UMMobClick.framework in Frameworks */,
-				79C644B31D17F30000E67050 /* libsqlite3.tbd in Frameworks */,
-				79C644B11D17F2F600E67050 /* libz.tbd in Frameworks */,
-				79C644BA1D17F65500E67050 /* GoogleMobileAds.framework in Frameworks */,
+				7926880F1D1BC9740099C57A /* GoogleMobileAds.framework in Frameworks */,
 				8BCC72E91CB398AC0043C95F /* CoreText.framework in Frameworks */,
-				79C644AD1D17EDF000E67050 /* AnnieIosSdk.framework in Frameworks */,
 				8BCC72E71CB398A10043C95F /* UIKit.framework in Frameworks */,
 				8BCC72E51CB398950043C95F /* SystemConfiguration.framework in Frameworks */,
 				8BCC72E31CB398890043C95F /* MessageUI.framework in Frameworks */,
@@ -108,11 +93,11 @@
 		8BCC72AE1CB38F370043C95F = {
 			isa = PBXGroup;
 			children = (
-				79C644B81D17F65500E67050 /* GoogleMobileAds.framework */,
+				792688121D1BCCD60099C57A /* libsqlite3.tbd */,
+				792688101D1BCCCD0099C57A /* libz.tbd */,
+				792688141D1BD1E60099C57A /* AnnieIosSdk.framework */,
+				7926880E1D1BC9740099C57A /* GoogleMobileAds.framework */,
 				79C644B91D17F65500E67050 /* UMMobClick.framework */,
-				79C644B21D17F30000E67050 /* libsqlite3.tbd */,
-				79C644B01D17F2F600E67050 /* libz.tbd */,
-				8BCC74811CB790120043E6DF /* AnnieIosSdk.framework */,
 				8BCC72E81CB398AC0043C95F /* CoreText.framework */,
 				8BCC72E61CB398A10043C95F /* UIKit.framework */,
 				8BCC72E41CB398950043C95F /* SystemConfiguration.framework */,
@@ -177,7 +162,6 @@
 				8BCC72B31CB38F370043C95F /* Sources */,
 				8BCC72B41CB38F370043C95F /* Frameworks */,
 				8BCC72B51CB38F370043C95F /* Resources */,
-				79C644AF1D17EDF000E67050 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,6 +201,7 @@
 				TargetAttributes = {
 					8BCC72B61CB38F370043C95F = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = L2KWN6VPX6;
 					};
 					8BCC72CF1CB38F370043C95F = {
 						CreatedOnToolsVersion = 7.0;
@@ -406,7 +391,7 @@
 					"$(OTHER_LDFLAGS)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgtt.com;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ag.hgtt.ttllk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -431,7 +416,7 @@
 					"$(OTHER_LDFLAGS)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hgtt.com;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ag.hgtt.ttllk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

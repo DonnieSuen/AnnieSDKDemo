@@ -61,6 +61,7 @@
 
 -(void)initDemoView
 {
+    NSLog(@"#######");
     UILabel *annie = [[UILabel alloc] initWithFrame:CGRectMake(35, 20, 250, 50)];
     annie.text = @"Annieo欢迎您，SDKDemo";
     annie.textColor = [UIColor blueColor];
@@ -128,15 +129,17 @@
 //    CGPoint adsPoint =  CGPointMake(0, 0);
 //    UIViewController * adsViewController = [[AnnieIosSdk sharedInstance] getBannerAdsView:kMyGADAdSizeBannerNormal withAdsPosition:adsPoint];
 
-    UIViewController *adsViewController =[[AnnieIosSdk sharedInstance]getBannerAdsView:kMyGADAdSizeBannerNormal withAdsPositionEnum:kMyAdPosBotRight];
-    UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
+    UIViewController *adsViewController =[[AnnieIosSdk sharedInstance]getBannerAdsView:kMyGADAdSizeSmartBannerLandscape withAdsPositionEnum:kMyAdPosBotRight];
+//    UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
+    UIViewController *rootViewController = [[[UIApplication sharedApplication] keyWindow] rootViewController];
     [rootViewController.view addSubview:adsViewController.view];
 }
 
 
 -(void)annIntereClick:(id)sender
 {
-    UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
+//    UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
+    UIViewController *rootViewController = [[[UIApplication sharedApplication] keyWindow] rootViewController];
     [[AnnieIosSdk sharedInstance]showInterstitialWithParentVC:rootViewController];
 }
 
@@ -172,11 +175,13 @@
  *  初始化回调
  */
 -(void)initSdk:(int)resultCode{
-   if (resultCode == AnnInitSuccess) {
+   NSLog(@"!!!!!!!");
+    if (resultCode == AnnInitSuccess) {
        
    }else if(resultCode == AnnNoInit){
        NSLog(@"＝＝＝未初始化");
    }
+    
     [self initDemoView];
     UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
     [[AnnieIosSdk sharedInstance]showInterstitialWithParentVC:rootViewController];
